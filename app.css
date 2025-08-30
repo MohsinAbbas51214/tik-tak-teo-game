@@ -1,0 +1,72 @@
+/* General layout */
+.game {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Board grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 8px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* Squares */
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid #555;
+  border-radius: 10px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.square:hover {
+  background: #ececec;
+  transform: scale(1.05);
+}
+
+/* Colors for players */
+.square.x {
+  color: #e63946; /* Red for X */
+}
+
+.square.o {
+  color: #457b9d; /* Blue for O */
+}
+
+/* Status text */
+.status {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+/* Restart button */
+.reset {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.reset:hover {
+  background: #457b9d;
+}
